@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ödev 2</title>
+    </head>
+    <body>
+        <script>
+            const ogrenciler=[
+                {id:1,ad:"Ahmet",not:75},
+                {id:2,ad:"Mehmet",not:90},
+                {id:3,ad:"Ayşe",not:85},
+                {id:4,ad:"Fatma",not:60},
+                {id:5,ad:"Can",not:95},
+                not=[75,85,90,60,95],
+            ]
+
+            const result=not.find((y)=>y>80);
+            const result_2=not.find((z)=>z<80);
+
+            const findIndex=ogrenciler.at(3).ad;
+
+            let high=not.findLast((x)=>x>80);
+
+            
+            const index=ogrenciler.findLastIndex((e)=>e==ogrenciler[3]);
+
+ 
+
+            console.log("80 notundan fazla alan ilk öğrenci notu "+result);
+            console.log("80 notundan az alan ilk öğrenci notu "+result_2);
+            console.log("3 id'sine sahip öğrenci "+findIndex);
+            console.log("80 notuna en yakın öğrenci notu "+high);
+            console.log("3 id'sine sahip öğrencinin indexi "+index);
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
